@@ -1,5 +1,7 @@
 # **Wav2Lip**: *Accurately Lip-syncing Videos In The Wild*
 
+For commercial requests, please contact us at radrabha.m@research.iiit.ac.in or prajwal.k@research.iiit.ac.in. We have an HD model ready that can be used commercially.
+
 This code is part of the paper: _A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild_ published at ACM Multimedia 2020. 
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-lip-sync-expert-is-all-you-need-for-speech/lip-sync-on-lrs2)](https://paperswithcode.com/sota/lip-sync-on-lrs2?p=a-lip-sync-expert-is-all-you-need-for-speech)
@@ -15,6 +17,7 @@ This code is part of the paper: _A Lip Sync Expert Is All You Need for Speech to
 ----------
 **Highlights**
 ----------
+ - Weights of the visual quality disc has been updated in readme!
  - Lip-sync videos to any target speech with high accuracy :100:. Try our [interactive demo](https://bhaasha.iiit.ac.in/lipsync).
  - :sparkles: Works for any identity, voice, and language. Also works for CGI faces and synthetic voices.
  - Complete training code, inference code, and pretrained models are available :boom:
@@ -24,7 +27,7 @@ This code is part of the paper: _A Lip Sync Expert Is All You Need for Speech to
 --------
 **Disclaimer**
 --------
-All results from this open-source code or our [demo website](https://bhaasha.iiit.ac.in/lipsync) should only be used for research/academic/personal purposes only. As the models are trained on the <a href="http://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html">LRS2 dataset</a>, any form of commercial use is strictly prohibhited. Please contact us for all further queries.   
+All results from this open-source code or our [demo website](https://bhaasha.iiit.ac.in/lipsync) should only be used for research/academic/personal purposes only. As the models are trained on the <a href="http://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html">LRS2 dataset</a>, any form of commercial use is strictly prohibhited. For commercial requests please contact us directly!
 
 Prerequisites
 -------------
@@ -40,6 +43,7 @@ Getting the weights
 | Wav2Lip  | Highly accurate lip-sync | [Link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/Eb3LEzbfuKlJiR600lQWRxgBIY27JZg80f7V9jtMfbNDaQ?e=TBFBVW)  |
 | Wav2Lip + GAN  | Slightly inferior lip-sync, but better visual quality | [Link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/EdjI7bZlgApMqsVoEUUXpLsBxqXbn5z8VTmoxp55YNDcIA?e=n9ljGW) |
 | Expert Discriminator  | Weights of the expert discriminator | [Link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/EQRvmiZg-HRAjvI6zqN9eTEBP74KefynCwPWVmF57l-AYA?e=ZRPHKP) |
+| Visual Quality Discriminator  | Weights of the visual disc trained in a GAN setup | [Link](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/EQVqH88dTm1HjlK11eNba5gBbn15WMS0B0EZbDBttqrqkg?e=ic0ljo) |
 
 Lip-syncing videos using the pre-trained models (Inference)
 -------
@@ -114,13 +118,15 @@ Training on other datasets might require modifications to the code. Please read 
 
 When raising an issue on this topic, please let us know that you are aware of all these points.
 
+We have an HD model trained on a dataset allowing commercial usage. The size of the generated face will be 192 x 288 in our new model.
+
 Evaluation
 ----------
 Please check the `evaluation/` folder for the instructions.
 
 License and Citation
 ----------
-The software can only be used for personal/research/non-commercial purposes. Please cite the following paper if you use this code:
+Theis repository can only be used for personal/research/non-commercial purposes. However, for commercial requests, please contact us directly at radrabha.m@research.iiit.ac.in or prajwal.k@research.iiit.ac.in. We have an HD model trained on a dataset allowing commercial usage. The size of the generated face will be 192 x 288 in our new model. Please cite the following paper if you use this repository:
 ```
 @inproceedings{10.1145/3394171.3413532,
 author = {Prajwal, K R and Mukhopadhyay, Rudrabha and Namboodiri, Vinay P. and Jawahar, C.V.},
